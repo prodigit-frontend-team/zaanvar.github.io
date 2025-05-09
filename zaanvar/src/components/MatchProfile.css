@@ -1,0 +1,207 @@
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 0;
+}
+
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+thead tr {
+  background-color: transparent;
+}
+
+th {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+tbody tr {
+  border-bottom: none;
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #333;
+  vertical-align: middle;
+}
+
+.custom-btn{
+    color: #00c5b8;
+}
+
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.5rem;
+}
+
+.circular-chart {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #f5790c;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.percentage {
+  fill: #333;
+  font-size: 0.45em;
+  text-anchor: middle;
+  font-weight: 500;
+}
+
+
+.btn-warning {
+  background-color: #f5790c;
+  border-color: #f5790c;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  text-transform: none;
+  
+}
+
+.btn-warning:hover {
+  background-color: #e06b0a;
+  border-color: #e06b0a;
+  color: #fff;
+}
+
+.table>:not(caption)>*>*{
+    padding: 1.5rem 3.5rem;
+    border-bottom-width: 0px;
+    font-size: 1.3rem;
+}
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .table > :not(caption) > * > * {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile view (576px and below) */
+@media (max-width: 576px) {
+  .table > :not(caption) > * > * {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+/* Tablet view (≤768px) */
+@media (max-width: 768px) {
+  .progress-circle,
+  .circular-chart {
+    width: 60px;
+    height: 60px;
+  }
+
+  .percentage {
+    font-size: 0.4em;
+  }
+
+  .btn-warning {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .profile-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .table > :not(caption) > * > * {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile view (≤576px) */
+@media (max-width: 576px) {
+  .progress-circle,
+  .circular-chart {
+    width: 45px;
+    height: 45px;
+  }
+
+  .percentage {
+    font-size: 0.35em;
+  }
+
+  .btn-warning {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .profile-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .table > :not(caption) > * > * {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}

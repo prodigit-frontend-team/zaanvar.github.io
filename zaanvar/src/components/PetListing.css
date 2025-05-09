@@ -1,0 +1,25 @@
+.btn-teal {
+  background-color: #00c5b8;
+  border: none;
+}
+
+.custom-btn {
+  background-color: #f8f9fa;
+  border-color: #e5e5e5;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
